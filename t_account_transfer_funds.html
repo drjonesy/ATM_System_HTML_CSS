@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>ATM System: Transfer Funds</title>
+    <meta name="description" content="Flat UI Kit Free is a Twitter Bootstrap Framework design and Theme, this responsive framework includes a PSD and HTML version."/>
+
+    <meta name="viewport" content="width=1000, initial-scale=1.0, maximum-scale=1.0">
+
+    <!-- Loading Bootstrap -->
+    <link href="dist/css/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Loading Flat UI -->
+    <link href="dist/css/flat-ui.css" rel="stylesheet">
+    <link href="docs/assets/css/demo.css" rel="stylesheet">
+    <link href="css/custom.css" rel="stylesheet">
+
+    <link rel="shortcut icon" href="img/favicon.ico">
+
+    <!-- HTML5 shim, for IE6-8 support of HTML5 elements. All other JS at the end of file. -->
+    <!--[if lt IE 9]>
+      <script src="dist/js/vendor/html5shiv.js"></script>
+      <script src="dist/js/vendor/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="container">
+      <div class="demo-headline" style="padding:0px;">
+        <h1 class="demo-logo">ATM
+          <small>24 Hour Banking</small>
+        </h1>
+      </div> <!-- /demo-headline -->
+      <div class="row">
+        <div class="col-xs-12" id="screenView">
+          <!-- Place <h1></h1> below -->
+          <h1 class="demo-section-title text-uppercase text-center">Transfer Funds</h1>
+          
+           <div class="row">
+
+            <!-- 3/4 -->
+            <!-- Balance -->
+            <div class="col-xs-9">
+                <div class="col-xs-12">
+                  <blockquote>Transfer funds from one account to another. You can type in a routing number of another account that is not in your available accounts. </blockquote>
+                </div>
+            <!-- Options -->
+                <div class="col-xs-6">
+                  <div class="tile">
+                    <h5>From:</h5>
+
+                    <button data-toggle="modal" data-target="#fromAccount" class="btn btn-block btn-lg btn-inverse"><h6>### - #### - 5789</h6></button>
+                  </div>
+                </div>
+
+                <div class="col-xs-6">
+                  <div class="tile">
+                    <h5>To:</h5>
+
+                    <button data-toggle="modal" data-target="#toAccount" class="btn btn-block btn-lg btn-inverse"><h6>### - #### - 5789</h6></button>
+                  </div>
+                </div>
+                <!-- // END OPTIONS -->
+                <div class="col-xs-12">
+                  <blockquote><h6>Click an account number to change to a different account.</h6></blockquote>
+                </div>
+                <div class="col-xs-12" style="margin-bottom: 2rem;">
+                  <a href="#" class="btn btn-block btn-lg btn-success"><h6><span class="fui-check"></span> Confirm Transfer</h6></a>
+                </div>
+            </div>
+            <!-- 1/4 -->
+            <div class="col-xs-3">
+              <div class="tile">
+               <a id="back" href="#" class="btn btn-lg btn-inverse text-uppercase btn-padding"><span class="fui-arrow-left"></span> Back</a>
+              </div>
+              <div class="tile">
+               <a id="logout" href="#" class="btn btn-lg btn-info text-uppercase btn-padding"><span class="fui-user"></span> Logout</a>
+              </div>
+              <div class="tile">
+               <a id="cancelTransactin" href="#" class="btn btn-lg btn-danger text-uppercase btn-padding"><span class="fui-cross"></span> Cancel</a>
+              </div>
+            </div>
+
+        
+
+  
+      </div> <!-- // END OPTIONS-->
+
+
+      </div><!--  // END column-->
+      <div class="col-xs-12">
+        <h2><blockquote>This ATM System is for software testing only! --- <a href="#">sitemap</a></blockquote> </h2>
+      </div>
+  </div><!-- // END row-->
+
+      
+
+
+    </div> <!-- /container -->
+
+    
+
+    <script src="dist/js/vendor/jquery.min.js"></script>
+    <script src="dist/js/vendor/video.js"></script>
+    <script src="dist/js/flat-ui.min.js"></script>
+    <script src="docs/assets/js/application.js"></script>
+
+    <script>
+      videojs.options.flash.swf = "dist/js/vendors/video-js.swf"
+    </script>
+
+
+    <!-- Modal fromAccount -->
+      <div class="modal fade" id="fromAccount" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Available Accounts</h4>
+            </div>
+            <div class="modal-body">
+             <!-- Available Accounts -->
+              
+                <p>Select from an available account below.</p>
+                
+                <a href="#" class="btn btn-block btn-lg btn-inverse text-uppercase modalList"><p>
+                  <span>Basic Savings</span>
+                  ###-####-5456</p></a>
+                
+                <a href="#" class="btn btn-block btn-lg btn-inverse text-uppercase modalList"><p>
+                  <span>Personal Checking</span>
+                    ###-####-3256</p></a>
+
+                <a href="#" class="btn btn-block btn-lg btn-inverse text-uppercase modalList"><p>
+                  <span>Business Checking</span>
+                    ###-####-5455</p></a>    
+
+                <a href="#" class="btn btn-block btn-lg btn-inverse text-uppercase modalList"><p>
+                  <span>Investments (MMD)</span>
+                    ###-####-8788</p></a> 
+
+                <a href="#" class="btn btn-block btn-lg btn-inverse text-uppercase modalList"><p>
+                  <span>Certificate of Deposite (CD)</span>
+                    ###-####-9897</p></a>
+
+            
+             <!-- // END Available Accounts -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modal toAccount -->
+      <div class="modal fade" id="toAccount" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+              <h4 class="modal-title" id="myModalLabel">Available Accounts</h4>
+            </div>
+            <div class="modal-body">
+             <!-- Available Accounts -->
+                <p>Input Routing Number</p>
+                <input type="text" id="toAccountCustom" class="form-control"/>
+                <button type="button" class="btn btn-primary text-uppercase routingButton">Use Routing Number</button>
+                <p>or select from an available account below.</p>
+                
+                <a href="#" class="btn btn-block btn-lg btn-inverse text-uppercase modalList"><p>
+                  <span>Basic Savings</span>
+                  ###-####-5456</p></a>
+                
+                <a href="#" class="btn btn-block btn-lg btn-inverse text-uppercase modalList"><p>
+                  <span>Personal Checking</span>
+                    ###-####-3256</p></a>
+
+                <a href="#" class="btn btn-block btn-lg btn-inverse text-uppercase modalList"><p>
+                  <span>Business Checking</span>
+                    ###-####-5455</p></a>    
+
+                <a href="#" class="btn btn-block btn-lg btn-inverse text-uppercase modalList"><p>
+                  <span>Investments (MMD)</span>
+                    ###-####-8788</p></a> 
+
+                <a href="#" class="btn btn-block btn-lg btn-inverse text-uppercase modalList"><p>
+                  <span>Certificate of Deposite (CD)</span>
+                    ###-####-9897</p></a>
+
+            
+             <!-- // END Available Accounts -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+  </body>
+</html>
