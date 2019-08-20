@@ -21,3 +21,6 @@ Use this file to add in custom css. There is already additional custom styles in
 
 * css/custom.css
 
+=====
+
+![ATM Preview]('ATM_Bank_Interface_GIF.gif')
