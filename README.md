@@ -23,4 +23,4 @@ Use this file to add in custom css. There is already additional custom styles in
 
 =====
 
-![ATM Preview]('ATM_Bank_Interface_GIF.gif')
+<img src="https://github.com/drjonesy/ATM_System_HTML_CSS/blob/master/ATM_Bank_Interface_GIF.gif" width="800" />
